@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE — Фитнес-клуб в Новосибирске | Тренажерный зал, Кроссфит, Бассейн</title>
+  <meta name="description" content="Фитнес-клуб PULSE в Новосибирске. 2500 м² ультрасовременного пространства: зона кроссфита, тренажеры Hammer Strength, 25-метровый бассейн, бокс и спа. Запишитесь на бесплатную пробную тренировку!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="PULSE — Премиальный фитнес-клуб в Новосибирске">
+  <meta property="og:description" content="2500 м² фитнеса нового поколения: тренажерный зал, бассейн 25м, кроссфит, единоборства и спа. Пробная тренировка бесплатно!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://celestial-47.github.io/fitness-club/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&auto=format&fit=crop">
+
+  <link rel="canonical" href="https://celestial-47.github.io/fitness-club/">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0F1012">
+
+  <!-- Favicon (Inline SVG Data-URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C6F432'%3E%3Cpath d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Inter (Cyrillic) + Oswald (Cyrillic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "PULSE",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&auto=format&fit=crop",
+    "url": "https://celestial-47.github.io/fitness-club/",
+    "telephone": "+79000000002",
+    "priceRange": "₽₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Красный проспект, д. 0",
+      "addressLocality": "Новосибирск",
+      "addressRegion": "Новосибирская область",
+      "postalCode": "630049",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "06:30",
+        "closes": "23:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. ШАПКА САЙТА (HEADER)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Фитнес-клуб PULSE Главная">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">PULSE</span>
+          <span class="logo-subtitle">Фитнес-клуб • НСК</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Основная навигация">
+        <a href="#directions" class="nav-link">Направления</a>
+        <a href="#schedule" class="nav-link">Расписание</a>
+        <a href="#trainers" class="nav-link">Тренеры</a>
+        <a href="#pricing" class="nav-link">Абонементы</a>
+        <a href="#calculator" class="nav-link">Калькулятор</a>
+        <a href="#results" class="nav-link">Результаты</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <div class="header-phone">
+          <a href="tel:+79000000002" class="phone-link">+7 (900) 000-00-02</a>
+          <span class="phone-city">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Новосибирск, Красный пр-т, д. 0
+          </span>
+        </div>
+
+        <a href="#trial" class="btn btn-lime header-cta">Пробная тренировка</a>
+
+        <!-- Burger Toggle for Mobile -->
+        <button type="button" class="burger-btn" id="burger-btn" aria-label="Открыть главное меню" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobile-nav" aria-label="Мобильное меню">
+    <ul class="mobile-nav-list">
+      <li><a href="#directions" class="mobile-nav-link">Направления</a></li>
+      <li><a href="#schedule" class="mobile-nav-link">Расписание</a></li>
+      <li><a href="#trainers" class="mobile-nav-link">Тренеры</a></li>
+      <li><a href="#pricing" class="mobile-nav-link">Абонементы</a></li>
+      <li><a href="#calculator" class="mobile-nav-link">Калькулятор формы</a></li>
+      <li><a href="#results" class="mobile-nav-link">Результаты клиентов</a></li>
+      <li><a href="#contacts" class="mobile-nav-link">Контакты и адрес</a></li>
+    </ul>
+
+    <div class="mobile-nav-contacts">
+      <a href="#trial" class="btn btn-lime" style="width: 100%; text-align: center;">Записаться на пробную</a>
+      <div style="text-align: center; margin-top: 12px;">
+        <a href="tel:+79000000002" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--text);">+7 (900) 000-00-02</a>
+        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 4px;">Новосибирск, Красный проспект, д. 0</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO СЕКЦИЯ
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80&auto=format&fit=crop" 
+             alt="Интерьер фитнес-клуба PULSE с гантельным рядом и тренажерами" 
+             class="hero-bg-img"
+             width="1600" 
+             height="900">
+        <div class="hero-overlay"></div>
+        <div class="hero-overlay-radial"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span>Новосибирск • Клуб открыт сегодня до 23:30</span>
+        </div>
+
+        <h1 class="hero-title">
+          ТВОЁ ТЕЛО — <br>
+          <span class="text-outline">ТВОЙ ХАРАКТЕР.</span> <br>
+          <span class="text-lime">ВЫЙДИ ЗА ПРЕДЕЛЫ.</span>
+        </h1>
+
+        <p class="hero-desc">
+          2500 м² бескомпромиссного фитнес-пространства в Новосибирске. Линейка оборудования Hammer Strength & Life Fitness, 25-метровый спортивный бассейн, кроссфит-бокс и команда тренеров международного класса.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#trial" class="btn btn-lime">
+            <span>Бесплатная пробная тренировка</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#pricing" class="btn btn-secondary">Выбрать абонемент</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">2500 м²</span>
+            <span class="stat-label">Пространство клуба</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">25 м</span>
+            <span class="stat-label">Бассейн на 4 дорожки</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Программ в неделю</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">24 / 7</span>
+            <span class="stat-label">Доступ по карте PRO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Бегущая строка (Marquee/Ticker) -->
+      <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker-track">
+          <span class="ticker-item">КРОССФИТ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">СИЛОВОЙ ТРЕНИНГ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">БОКС & ЕДИНОБОРСТВА <span class="ticker-separator"></span></span>
+          <span class="ticker-item">СПОРТИВНЫЙ БАССЕЙН 25М <span class="ticker-separator"></span></span>
+          <span class="ticker-item">ХАТХА-ЙОГА & СТРЕТЧИНГ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">ФУНКЦИОНАЛЬНЫЙ ТРЕНИНГ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">ФИНСКАЯ САУНА & ХАММАМ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">INBODY ТЕСТИРОВАНИЕ <span class="ticker-separator"></span></span>
+          <!-- Duplicate for seamless infinite loop -->
+          <span class="ticker-item">КРОССФИТ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">СИЛОВОЙ ТРЕНИНГ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">БОКС & ЕДИНОБОРСТВА <span class="ticker-separator"></span></span>
+          <span class="ticker-item">СПОРТИВНЫЙ БАССЕЙН 25М <span class="ticker-separator"></span></span>
+          <span class="ticker-item">ХАТХА-ЙОГА & СТРЕТЧИНГ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">ФУНКЦИОНАЛЬНЫЙ ТРЕНИНГ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">ФИНСКАЯ САУНА & ХАММАМ <span class="ticker-separator"></span></span>
+          <span class="ticker-item">INBODY ТЕСТИРОВАНИЕ <span class="ticker-separator"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. НАПРАВЛЕНИЯ (6 КАРТОЧЕК)
+         ========================================================================== -->
+    <section class="section" id="directions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Тренировочные зоны</span>
+          <h2 class="section-title">6 НАПРАВЛЕНИЙ ДЛЯ <span class="text-accent">ТВОЕГО ПРОРЫВА</span></h2>
+          <p class="section-subtitle">
+            Каждая зона спроектирована под конкретную спортивную цель: от тяжелых базовых приседов до глубокого восстановления и спортивного плавания.
+          </p>
+        </div>
+
+        <div class="directions-grid">
+          <!-- 1. Силовые -->
+          <article class="direction-card">
+            <div class="direction-media">
+              <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&q=80&auto=format&fit=crop" 
+                   alt="Атлет выполняет становую тягу в зале тяжелой атлетики" 
+                   class="direction-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="500">
+              <div class="direction-overlay"></div>
+              <span class="badge-hot direction-badge">ТОП ВЫБОР</span>
+            </div>
+            <div class="direction-body">
+              <h3 class="direction-title">Силовой тренинг & Пауэрлифтинг</h3>
+              <p class="direction-desc">
+                Профессиональные соревновательные помосты Eleiko, грифы стандарта IPF, гантельный ряд до 60 кг и полная линейка блочных тренажеров Hammer Strength.
+              </p>
+              <div class="direction-meta">
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  60–90 мин
+                </span>
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  До 700 ккал
+                </span>
+                <span class="meta-item">Все уровни</span>
+              </div>
+              <a href="#trial" class="direction-link" onclick="prefillTrialForm('strength')">
+                <span>Записаться в зал</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Кроссфит -->
+          <article class="direction-card">
+            <div class="direction-media">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80&auto=format&fit=crop" 
+                   alt="Кроссфит тренировка в фитнес-клубе PULSE" 
+                   class="direction-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="500">
+              <div class="direction-overlay"></div>
+              <span class="badge-lime direction-badge">WOD КАЖДЫЙ ДЕНЬ</span>
+            </div>
+            <div class="direction-body">
+              <h3 class="direction-title">CrossFit & High Intensity</h3>
+              <p class="direction-desc">
+                Сертифицированная кроссфит-коробка: рамы для подтягиваний, гребные Concept2, байки Echo Bike, тумбы, канаты и медицинские мячи. Развитие силовой выносливости.
+              </p>
+              <div class="direction-meta">
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  60 мин
+                </span>
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  До 900 ккал
+                </span>
+                <span class="meta-item">Высокая нагрузка</span>
+              </div>
+              <a href="#trial" class="direction-link" onclick="prefillTrialForm('crossfit')">
+                <span>Попробовать WOD</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Бокс -->
+          <article class="direction-card">
+            <div class="direction-media">
+              <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800&q=80&auto=format&fit=crop" 
+                   alt="Боксер в перчатках готовится к тренировке на ринге" 
+                   class="direction-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="500">
+              <div class="direction-overlay"></div>
+              <span class="badge-hot direction-badge">БОЙЦОВСКИЙ КЛУБ</span>
+            </div>
+            <div class="direction-body">
+              <h3 class="direction-title">Бокс & Единоборства</h3>
+              <p class="direction-desc">
+                Полноразмерный соревновательный ринг, зона тяжелых мешков Fairtex, каплевидные снаряды, пневматические груши. Постановка удара, спарринги и боевой фитнес.
+              </p>
+              <div class="direction-meta">
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  60–75 мин
+                </span>
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  До 800 ккал
+                </span>
+                <span class="meta-item">Любой уровень</span>
+              </div>
+              <a href="#trial" class="direction-link" onclick="prefillTrialForm('boxing')">
+                <span>Выйти в ринг</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Йога -->
+          <article class="direction-card">
+            <div class="direction-media">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80&auto=format&fit=crop" 
+                   alt="Практика йоги и растяжки в студии Mind and Body" 
+                   class="direction-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="500">
+              <div class="direction-overlay"></div>
+              <span class="badge-lime direction-badge">MIND & BODY</span>
+            </div>
+            <div class="direction-body">
+              <h3 class="direction-title">Йога, Пилатес & Стретчинг</h3>
+              <p class="direction-desc">
+                Тихая студия со звукоизоляцией, мягким приглушенным светом и гамаками для аэройоги. Укрепление постуральных мышц, мобильность суставов и снятие стресса.
+              </p>
+              <div class="direction-meta">
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  60 мин
+                </span>
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  До 350 ккал
+                </span>
+                <span class="meta-item">Мягкая нагрузка</span>
+              </div>
+              <a href="#trial" class="direction-link" onclick="prefillTrialForm('yoga')">
+                <span>Записаться на йогу</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Функциональный тренинг -->
+          <article class="direction-card">
+            <div class="direction-media">
+              <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80&auto=format&fit=crop" 
+                   alt="Функциональный тренинг с канатами в клубе PULSE" 
+                   class="direction-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="500">
+              <div class="direction-overlay"></div>
+              <span class="badge-lime direction-badge">TRX & КАНАТЫ</span>
+            </div>
+            <div class="direction-body">
+              <h3 class="direction-title">Функциональный тренинг</h3>
+              <p class="direction-desc">
+                Многосуставные движения в трёх плоскостях. Петли TRX, боевые канаты, плиометрические боксы, ViPR и сэндбэги для гармоничного атлетичного телосложения.
+              </p>
+              <div class="direction-meta">
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  55 мин
+                </span>
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  До 650 ккал
+                </span>
+                <span class="meta-item">Средняя нагрузка</span>
+              </div>
+              <a href="#trial" class="direction-link" onclick="prefillTrialForm('functional')">
+                <span>Начать функционал</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Бассейн -->
+          <article class="direction-card">
+            <div class="direction-media">
+              <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800&q=80&auto=format&fit=crop" 
+                   alt="25-метровый спортивный бассейн с чистой водой" 
+                   class="direction-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="500">
+              <div class="direction-overlay"></div>
+              <span class="badge-hot direction-badge">АКВАЗОНА 25М</span>
+            </div>
+            <div class="direction-body">
+              <h3 class="direction-title">Бассейн, Аквафитнес & Спа</h3>
+              <p class="direction-desc">
+                4 спортивные дорожки по 25 метров с трехступенчатой озоновой очисткой воды без резкого запаха хлора. Секции плавания, аквааэробика, финская сауна и хаммам.
+              </p>
+              <div class="direction-meta">
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  45–60 мин
+                </span>
+                <span class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  До 500 ккал
+                </span>
+                <span class="meta-item">Все возрасты</span>
+              </div>
+              <a href="#trial" class="direction-link" onclick="prefillTrialForm('pool')">
+                <span>Заплыв в бассейне</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. РАСПИСАНИЕ (SCHEDULE)
+         ========================================================================== -->
+    <section class="section" id="schedule" style="background-color: var(--surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Сетка тренировок</span>
+          <h2 class="section-title">РАСПИСАНИЕ <span class="text-accent">ГРУППОВЫХ ПРОГРАММ</span></h2>
+          <p class="section-subtitle">
+            Выберите удобный день недели и направление. Нажмите «Записаться», чтобы забронировать место в группе.
+          </p>
+        </div>
+
+        <div class="schedule-controls">
+          <!-- Days Navigation Pills -->
+          <div class="days-nav" role="tablist" aria-label="Выбор дня недели">
+            <button type="button" class="day-tab is-active" data-day="mon" role="tab" aria-selected="true">
+              <span class="day-tab-name">ПН</span>
+              <span class="day-tab-full">Понедельник</span>
+            </button>
+            <button type="button" class="day-tab" data-day="tue" role="tab" aria-selected="false">
+              <span class="day-tab-name">ВТ</span>
+              <span class="day-tab-full">Вторник</span>
+            </button>
+            <button type="button" class="day-tab" data-day="wed" role="tab" aria-selected="false">
+              <span class="day-tab-name">СР</span>
+              <span class="day-tab-full">Среда</span>
+            </button>
+            <button type="button" class="day-tab" data-day="thu" role="tab" aria-selected="false">
+              <span class="day-tab-name">ЧТ</span>
+              <span class="day-tab-full">Четверг</span>
+            </button>
+            <button type="button" class="day-tab" data-day="fri" role="tab" aria-selected="false">
+              <span class="day-tab-name">ПТ</span>
+              <span class="day-tab-full">Пятница</span>
+            </button>
+            <button type="button" class="day-tab" data-day="sat" role="tab" aria-selected="false">
+              <span class="day-tab-name">СБ</span>
+              <span class="day-tab-full">Суббота</span>
+            </button>
+            <button type="button" class="day-tab" data-day="sun" role="tab" aria-selected="false">
+              <span class="day-tab-name">ВС</span>
+              <span class="day-tab-full">Воскресенье</span>
+            </button>
+          </div>
+
+          <!-- Category Filter Chips -->
+          <div class="filter-chips" role="group" aria-label="Фильтр по направлениям">
+            <button type="button" class="filter-chip is-active" data-filter="all">Все направления</button>
+            <button type="button" class="filter-chip" data-filter="strength">Силовые</button>
+            <button type="button" class="filter-chip" data-filter="crossfit">Кроссфит</button>
+            <button type="button" class="filter-chip" data-filter="boxing">Бокс</button>
+            <button type="button" class="filter-chip" data-filter="yoga">Йога</button>
+            <button type="button" class="filter-chip" data-filter="functional">Функционал</button>
+            <button type="button" class="filter-chip" data-filter="pool">Бассейн</button>
+          </div>
+        </div>
+
+        <!-- Schedule Cards List (Responsive Grid) -->
+        <div class="schedule-list" id="schedule-list" aria-live="polite">
+          <!-- Dynamically populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. ТРЕНЕРЫ (TRAINERS WITH SCROLL-SNAP)
+         ========================================================================== -->
+    <section class="section" id="trainers">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: var(--space-xl);">
+          <div class="section-header" style="margin-bottom: 0;">
+            <span class="section-tag">Наставники</span>
+            <h2 class="section-title">ТРЕНЕРЫ, КОТОРЫЕ <span class="text-accent">ДОВОДЯТ ДО РЕЗУЛЬТАТА</span></h2>
+            <p class="section-subtitle">
+              Мастера спорта, призеры всероссийских турниров и сертифицированные эксперты с профильным спортивным образованием.
+            </p>
+          </div>
+
+          <div class="trainers-controls">
+            <button type="button" class="slider-btn" id="trainers-prev" aria-label="Предыдущий тренер">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button type="button" class="slider-btn" id="trainers-next" aria-label="Следующий тренер">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Snap Container -->
+        <div class="trainers-slider-wrap">
+          <div class="trainers-slider" id="trainers-slider">
+            
+            <!-- Trainer 1 -->
+            <article class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=800&q=80&auto=format&fit=crop" 
+                     alt="Тренер Алексей Воронов — Главный тренер по пауэрлифтингу" 
+                     class="trainer-img" 
+                     loading="lazy" 
+                     width="800" 
+                     height="1000">
+                <span class="trainer-exp-badge">Стаж 11 лет</span>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Алексей Воронов</h3>
+                <span class="trainer-role">Главный тренер • Heavy Strength</span>
+                <p class="trainer-bio">
+                  Мастер спорта международного класса по пауэрлифтингу (IPF). Специализируется на наборе мышечной массы, коррекции осанки и силовом прогрессе без травм.
+                </p>
+                <div class="trainer-tags">
+                  <span class="trainer-tag">Пауэрлифтинг</span>
+                  <span class="trainer-tag">Гипертрофия</span>
+                  <span class="trainer-tag">Подготовка к стартам</span>
+                </div>
+                <button type="button" class="btn btn-secondary trainer-book-btn" data-trainer="Алексей Воронов" style="width: 100%;">
+                  Записаться к Алексею
+                </button>
+              </div>
+            </article>
+
+            <!-- Trainer 2 -->
+            <article class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=80&auto=format&fit=crop" 
+                     alt="Тренер Дарья Ковалёва — Старший тренер CrossFit" 
+                     class="trainer-img" 
+                     loading="lazy" 
+                     width="800" 
+                     height="1000">
+                <span class="trainer-exp-badge">Стаж 8 лет</span>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Дарья Ковалёва</h3>
+                <span class="trainer-role">Старший тренер CrossFit & HIIT</span>
+                <p class="trainer-bio">
+                  Сертификат CrossFit Level-2 Trainer. Эксперт по развитию выносливости, снижению жировой массы и функциональной гимнастике.
+                </p>
+                <div class="trainer-tags">
+                  <span class="trainer-tag">CrossFit Level-2</span>
+                  <span class="trainer-tag">Жиросжигание</span>
+                  <span class="trainer-tag">TRX Pro</span>
+                </div>
+                <button type="button" class="btn btn-secondary trainer-book-btn" data-trainer="Дарья Ковалёва" style="width: 100%;">
+                  Записаться к Дарье
+                </button>
+              </div>
+            </article>
+
+            <!-- Trainer 3 -->
+            <article class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80&auto=format&fit=crop" 
+                     alt="Тренер Михаил Громов — Мастер спорта по боксу" 
+                     class="trainer-img" 
+                     loading="lazy" 
+                     width="800" 
+                     height="1000">
+                <span class="trainer-exp-badge">Стаж 14 лет</span>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Михаил Громов</h3>
+                <span class="trainer-role">Руководитель секции единоборств</span>
+                <p class="trainer-bio">
+                  Мастер спорта РФ по боксу. 42 победных профессиональных боя. Ставит идеальную ударную технику, перемещения на ногах и реакцию как новичкам, так и профи.
+                </p>
+                <div class="trainer-tags">
+                  <span class="trainer-tag">Классический бокс</span>
+                  <span class="trainer-tag">Работа на лапах</span>
+                  <span class="trainer-tag">Самооборона</span>
+                </div>
+                <button type="button" class="btn btn-secondary trainer-book-btn" data-trainer="Михаил Громов" style="width: 100%;">
+                  Записаться к Михаилу
+                </button>
+              </div>
+            </article>
+
+            <!-- Trainer 4 -->
+            <article class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80&auto=format&fit=crop" 
+                     alt="Тренер Елена Селезнёва — Хатха-йога и пилатес" 
+                     class="trainer-img" 
+                     loading="lazy" 
+                     width="800" 
+                     height="1000">
+                <span class="trainer-exp-badge">Стаж 9 лет</span>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Елена Селезнёва</h3>
+                <span class="trainer-role">Ведущий инструктор Mind & Body</span>
+                <p class="trainer-bio">
+                  Международный сертификат Yoga Alliance RYT-500. Специалист по биомеханике, миофасциальному релизу и восстановлению после грыж и протрузий.
+                </p>
+                <div class="trainer-tags">
+                  <span class="trainer-tag">RYT-500 Yoga</span>
+                  <span class="trainer-tag">Здоровая спина</span>
+                  <span class="trainer-tag">МФР & Стретчинг</span>
+                </div>
+                <button type="button" class="btn btn-secondary trainer-book-btn" data-trainer="Елена Селезнёва" style="width: 100%;">
+                  Записаться к Елене
+                </button>
+              </div>
+            </article>
+
+            <!-- Trainer 5 -->
+            <article class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?w=800&q=80&auto=format&fit=crop" 
+                     alt="Тренер Денис Соколов — Плавание и триатлон" 
+                     class="trainer-img" 
+                     loading="lazy" 
+                     width="800" 
+                     height="1000">
+                <span class="trainer-exp-badge">Стаж 10 лет</span>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Денис Соколов</h3>
+                <span class="trainer-role">Старший тренер бассейна & Ironman</span>
+                <p class="trainer-bio">
+                  Мастер спорта по плаванию, финишер трёх дистанций Ironman. Обучает плаванию с нуля взрослых за 10 занятий, корректирует технику кроля и баттерфляя.
+                </p>
+                <div class="trainer-tags">
+                  <span class="trainer-tag">Спортивное плавание</span>
+                  <span class="trainer-tag">Подготовка к триатлону</span>
+                  <span class="trainer-tag">Аквафитнес</span>
+                </div>
+                <button type="button" class="btn btn-secondary trainer-book-btn" data-trainer="Денис Соколов" style="width: 100%;">
+                  Записаться к Денису
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. АБОНЕМЕНТЫ (PRICING)
+         ========================================================================== -->
+    <section class="section" id="pricing" style="background-color: var(--surface);">
+      <div class="container">
+        <div class="section-header" style="text-align: center; align-items: center;">
+          <span class="section-tag">Клубные карты</span>
+          <h2 class="section-title">ТАРИФЫ БЕЗ <span class="text-accent">СКРЫТЫХ ПЛАТЕЖЕЙ</span></h2>
+          <p class="section-subtitle">
+            Все карты включают фитнес-тестирование на анализаторе состава тела InBody и вводный инструктаж с тренером.
+          </p>
+        </div>
+
+        <!-- Billing Switch -->
+        <div class="pricing-billing-switch">
+          <span class="switch-label is-active" id="label-month">Месяц</span>
+          <button type="button" class="toggle-btn" id="pricing-toggle" role="switch" aria-checked="false" aria-label="Переключить ежемесячную и годовую оплату"></button>
+          <span class="switch-label" id="label-year">Год</span>
+          <span class="discount-badge">ЭКОНОМИЯ 20%</span>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+          <!-- 1. Базовый дневной -->
+          <article class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-tier">Дневной</h3>
+              <p class="pricing-desc">Для тех, кто тренируется утром и днем без вечерних очередей к снарядам.</p>
+            </div>
+            <div class="pricing-price-wrap">
+              <span class="pricing-price" data-month="2 900" data-year="27 840">2 900</span>
+              <span class="pricing-period">₽ / месяц</span>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Доступ в клуб в будни с 07:00 до 17:00</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Тренажерный зал Hammer Strength</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Кардиозона с панорамным видом</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Финская сауна в раздевалке</span>
+              </li>
+              <li class="pricing-feature is-disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span>Спортивный бассейн 25м</span>
+              </li>
+              <li class="pricing-feature is-disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span>Групповые занятия в прайм-тайм</span>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-secondary pricing-cta-btn" data-plan="Дневной" style="width: 100%;">
+              Оформить карту
+            </button>
+          </article>
+
+          <!-- 2. Безлимит PULSE (Хит) -->
+          <article class="pricing-card is-popular">
+            <div class="pricing-badge-popular">
+              <span class="badge-hot">ХИТ ПРОДАЖ • ВЫБОР 75% КЛИЕНТОВ</span>
+            </div>
+            <div class="pricing-header">
+              <h3 class="pricing-tier" style="color: var(--accent);">Безлимит PULSE</h3>
+              <p class="pricing-desc">Полная свобода тренировок: зал, бассейн, сауны и любые групповые классы без лимитов.</p>
+            </div>
+            <div class="pricing-price-wrap">
+              <span class="pricing-price" data-month="4 900" data-year="47 040">4 900</span>
+              <span class="pricing-period">₽ / месяц</span>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Полный безлимит в клуб (будни 06:30–23:30, вых. 08:00–22:00)</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Бассейн 25 метров без ограничений по времени</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Все групповые программы (кроссфит, бокс, йога)</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Финская сауна + турецкий хаммам</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>30 дней бесплатной заморозки карты</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>2 гостевых визита для друзей в месяц</span>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-lime pricing-cta-btn" data-plan="Безлимит PULSE" style="width: 100%;">
+              Выбрать этот тариф
+            </button>
+          </article>
+
+          <!-- 3. PRO VIP -->
+          <article class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-tier">PRO VIP & SPA</h3>
+              <p class="pricing-desc">Премиум-сервис, персональный шкафчик, массаж и персональные тренировки.</p>
+            </div>
+            <div class="pricing-price-wrap">
+              <span class="pricing-price" data-month="8 900" data-year="85 440">8 900</span>
+              <span class="pricing-period">₽ / месяц</span>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Круглосуточный доступ 24/7 по электронному ключу</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Включены 4 персональные тренировки в месяц</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Личный именной шкафчик в VIP-раздевалке</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Спортивный массаж (2 сеанса в месяц)</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Ежемесячный анализ состава тела InBody</span>
+              </li>
+              <li class="pricing-feature">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Бесплатная парковка на подземном паркинге</span>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-secondary pricing-cta-btn" data-plan="PRO VIP & SPA" style="width: 100%;">
+              Получить VIP карту
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. КАЛЬКУЛЯТОР ИМТ + КАЛОРИИ (CALCULATOR)
+         ========================================================================== -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Фитнес-инструменты</span>
+          <h2 class="section-title">КАЛЬКУЛЯТОР <span class="text-accent">ИМТ И СУТОЧНЫХ КАЛОРИЙ</span></h2>
+          <p class="section-subtitle">
+            Узнайте свой индекс массы тела и точную потребность в энергии по научной формуле Миффлина-Сан Жеора.
+          </p>
+        </div>
+
+        <div class="calc-wrapper">
+          <!-- Form Inputs -->
+          <form class="calc-form" id="bmi-form" onsubmit="return false;">
+            <div class="calc-field">
+              <label class="calc-label">Пол</label>
+              <div class="gender-toggle" role="radiogroup" aria-label="Выбор пола">
+                <button type="button" class="gender-btn is-active" data-gender="male" role="radio" aria-checked="true">Мужской</button>
+                <button type="button" class="gender-btn" data-gender="female" role="radio" aria-checked="false">Женский</button>
+              </div>
+            </div>
+
+            <div class="calc-row">
+              <div class="calc-field">
+                <label for="calc-height" class="calc-label">Рост (см)</label>
+                <input type="number" id="calc-height" class="calc-input" value="180" min="120" max="230" required>
+              </div>
+              <div class="calc-field">
+                <label for="calc-weight" class="calc-label">Вес (кг)</label>
+                <input type="number" id="calc-weight" class="calc-input" value="80" min="35" max="220" required>
+              </div>
+            </div>
+
+            <div class="calc-row">
+              <div class="calc-field">
+                <label for="calc-age" class="calc-label">Возраст (лет)</label>
+                <input type="number" id="calc-age" class="calc-input" value="28" min="14" max="90" required>
+              </div>
+              <div class="calc-field">
+                <label for="calc-activity" class="calc-label">Физическая активность</label>
+                <select id="calc-activity" class="calc-select">
+                  <option value="1.2">Сидячий образ жизни (офис)</option>
+                  <option value="1.375" selected>1–3 тренировки в неделю</option>
+                  <option value="1.55">3–5 тренировок в неделю</option>
+                  <option value="1.725">Тяжелые тренировки 6–7 раз</option>
+                  <option value="1.9">Профессиональный спорт</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <!-- Results Box -->
+          <div class="calc-results" aria-live="polite">
+            <div class="bmi-display">
+              <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em;">Индекс массы тела (ИМТ)</span>
+              <div class="bmi-number-row">
+                <span class="bmi-val" id="calc-bmi-val">24.7</span>
+                <span class="bmi-category" id="calc-bmi-cat">Нормальный вес</span>
+              </div>
+              
+              <!-- Color segmented bar -->
+              <div class="bmi-bar" aria-hidden="true">
+                <div class="bmi-seg-1" title="Дефицит < 18.5"></div>
+                <div class="bmi-seg-2" title="Норма 18.5 - 24.9"></div>
+                <div class="bmi-seg-3" title="Избыточный вес 25 - 29.9"></div>
+                <div class="bmi-seg-4" title="Ожирение 30+"></div>
+                <div class="bmi-pointer" id="calc-bmi-pointer" style="left: 53%;"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted);">
+                <span>16</span>
+                <span>18.5</span>
+                <span>25.0</span>
+                <span>30.0</span>
+                <span>40</span>
+              </div>
+            </div>
+
+            <!-- Calories Breakdown -->
+            <div class="calories-box">
+              <div class="cal-item">
+                <span class="cal-num" id="calc-bmr-val">1 815 ккал</span>
+                <span class="cal-label">Базовый метаболизм (BMR)</span>
+              </div>
+              <div class="cal-item">
+                <span class="cal-num" id="calc-tdee-val" style="color: var(--accent);">2 496 ккал</span>
+                <span class="cal-label">Норма калорий в сутки</span>
+              </div>
+            </div>
+
+            <!-- Recommendation snippet -->
+            <div class="calc-recommendation">
+              <strong>Рекомендация PULSE:</strong>
+              <span id="calc-rec-text">Отличная форма! Рекомендуем сочетать CrossFit и силовые нагрузки для рельефа и функциональной выносливости.</span>
+            </div>
+
+            <a href="#trial" class="btn btn-lime" style="width: 100%; text-align: center;">Получить консультацию тренера</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. РЕЗУЛЬТАТЫ КЛИЕНТОВ (RESULTS & TRANSFORMATIONS)
+         ========================================================================== -->
+    <section class="section" id="results" style="background-color: var(--surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Живой прогресс</span>
+          <h2 class="section-title">РЕЗУЛЬТАТЫ <span class="text-accent">КЛИЕНТОВ PULSE</span></h2>
+          <p class="section-subtitle">
+            За каждым результатом стоят регулярные тренировки, продуманный план питания и поддержка личного наставника клуба.
+          </p>
+        </div>
+
+        <div class="results-grid">
+          <!-- Case 1 -->
+          <article class="result-card">
+            <div class="result-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?w=800&q=80&auto=format&fit=crop" 
+                   alt="Клиент Артём Макаров после 6 месяцев тренировок" 
+                   class="result-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="900">
+              <span class="result-pill">-17 КГ ЗА 5 МЕСЯЦЕВ</span>
+            </div>
+            <div class="result-body">
+              <h3 class="result-name">Артём Макаров, 34 года</h3>
+              <span class="result-meta">Программа: Силовой тренинг + дефицит калорий</span>
+              <p class="result-quote">
+                «Пришел в клуб с одышкой на 3-м этаже и весом 102 кг. Тренер выстроил питание без голодовок и поставил технику базы. Сейчас жму 120 кг и пробегаю полумарафон!»
+              </p>
+              <span class="result-trainer-tag">Тренер: Алексей Воронов</span>
+            </div>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="result-card">
+            <div class="result-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80&auto=format&fit=crop" 
+                   alt="Клиентка София Романова после 4 месяцев в клубе PULSE" 
+                   class="result-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="900">
+              <span class="result-pill">-8 СМ В ТАЛИИ</span>
+            </div>
+            <div class="result-body">
+              <h3 class="result-name">София Романова, 27 лет</h3>
+              <span class="result-meta">Программа: CrossFit + Стретчинг</span>
+              <p class="result-quote">
+                «Боялась перекачаться, но Дарья показала, как грамотный кроссфит делает фигуру подтянутой и женственной. Появился потрясающий пресс и энергия на весь рабочий день.»
+              </p>
+              <span class="result-trainer-tag">Тренер: Дарья Ковалёва</span>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="result-card">
+            <div class="result-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80&auto=format&fit=crop" 
+                   alt="Клиент Максим Белов на тренировке по боксу" 
+                   class="result-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="900">
+              <span class="result-pill">+9 КГ СУХИХ МЫШЦ</span>
+            </div>
+            <div class="result-body">
+              <h3 class="result-name">Максим Белов, 29 лет</h3>
+              <span class="result-meta">Программа: Бокс & Функционал</span>
+              <p class="result-quote">
+                «Всегда был худощавым эктоморфом. За 7 месяцев набрал чистую мышечную массу, поставил нокаутирующий удар и перестал чувствовать хроническую усталость.»
+              </p>
+              <span class="result-trainer-tag">Тренер: Михаил Громов</span>
+            </div>
+          </article>
+
+          <!-- Case 4 -->
+          <article class="result-card">
+            <div class="result-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=800&q=80&auto=format&fit=crop" 
+                   alt="Клиентка Екатерина Лебедева после курса аквафитнеса и йоги" 
+                   class="result-img" 
+                   loading="lazy" 
+                   width="800" 
+                   height="900">
+              <span class="result-pill">РЕЛАКС & ОСАНКА</span>
+            </div>
+            <div class="result-body">
+              <h3 class="result-name">Екатерина Лебедева, 39 лет</h3>
+              <span class="result-meta">Программа: Бассейн 25м + Хатха-йога</span>
+              <p class="result-quote">
+                «Из-за сидячей работы в IT мучили боли в пояснице. Плавание и йога в PULSE полностью сняли спазмы за два месяца. Бассейн здесь чистейший, без запаха хлора!»
+              </p>
+              <span class="result-trainer-tag">Тренер: Елена Селезнёва</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. ФОРМА ПРОБНОЙ ТРЕНИРОВКИ (TRIAL BOOKING)
+         ========================================================================== -->
+    <section class="section trial-section" id="trial">
+      <div class="container">
+        <div class="trial-wrapper cut-corner-lg">
+          <!-- Info side -->
+          <div class="trial-info-side">
+            <div>
+              <span class="section-tag">Бесплатный тест-драйв</span>
+              <h2 class="section-title" style="margin-top: 8px;">ЗАПИШИСЬ НА <br><span class="text-accent">ПРОБНУЮ ТРЕНИРОВКУ</span></h2>
+              <p class="section-subtitle" style="margin-top: 12px;">
+                Оцените мощную атмосферу, премиальное оборудование и уровень сервиса PULSE без покупки абонемента.
+              </p>
+            </div>
+
+            <ul class="trial-benefits">
+              <li class="trial-benefit">
+                <div class="trial-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>Персональный инструктаж тренера (45 минут)</span>
+              </li>
+              <li class="trial-benefit">
+                <div class="trial-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>Свободный доступ во все зоны клуба и бассейн</span>
+              </li>
+              <li class="trial-benefit">
+                <div class="trial-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>Анализ состава тела на аппарате InBody</span>
+              </li>
+              <li class="trial-benefit">
+                <div class="trial-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>Полотенце и питьевая вода включены</span>
+              </li>
+            </ul>
+
+            <div style="font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px;">
+              Менеджер перезвонит вам в течение 10 минут в рабочее время для согласования времени визита.
+            </div>
+          </div>
+
+          <!-- Form side -->
+          <div class="trial-form-side">
+            <!-- Active Input Form -->
+            <form id="trial-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Ваше имя *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Иван Иванов" required autocomplete="name">
+                <span class="field-error" id="error-name">Пожалуйста, укажите имя</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-phone" class="form-label">Номер телефона *</label>
+                <input type="tel" id="form-phone" class="form-input" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+                <span class="field-error" id="error-phone">Введите корректный номер телефона</span>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="form-direction" class="form-label">Направление</label>
+                  <select id="form-direction" class="form-select">
+                    <option value="strength">Силовой тренинг</option>
+                    <option value="crossfit">Кроссфит (CrossFit)</option>
+                    <option value="boxing">Бокс & Единоборства</option>
+                    <option value="pool">Бассейн 25м & Спа</option>
+                    <option value="yoga">Йога & Пилатес</option>
+                    <option value="functional">Функциональный тренинг</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-time" class="form-label">Удобное время визита</label>
+                  <select id="form-time" class="form-select">
+                    <option value="morning">Утро (07:00 – 12:00)</option>
+                    <option value="day" selected>День (12:00 – 17:00)</option>
+                    <option value="evening">Вечер (17:00 – 22:00)</option>
+                  </select>
+                </div>
+              </div>
+
+              <label class="form-consent">
+                <input type="checkbox" id="form-consent" required>
+                <span>Я согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" style="color: var(--accent); text-decoration: underline;">Политикой конфиденциальности</a></span>
+              </label>
+              <span class="field-error" id="error-consent" style="margin-top: -12px; margin-bottom: 12px;"></span>
+
+              <button type="submit" class="btn btn-lime" style="width: 100%; font-size: 1.1rem; padding: 16px;">
+                <span>ПОЛУЧИТЬ ПРИГЛАШЕНИЕ БЕСПЛАТНО</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </form>
+
+            <!-- Success Card (Shown upon successful submit) -->
+            <div class="form-success-card" id="trial-success-card" role="status" aria-live="polite">
+              <div class="success-icon-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="success-title">ЗАЯВКА ПРИНЯТА!</h3>
+              <p class="success-text">
+                Отлично, <strong id="success-user-name" style="color: var(--accent);">Атлет</strong>! Мы забронировали для вас гостевой пропуск. Наш фитнес-консультант позвонит вам в течение 10 минут для подтверждения времени.
+              </p>
+              <div class="success-details" id="success-booking-details">
+                Направление: Силовой тренинг • Время: День (12:00–17:00)
+              </div>
+              <p style="font-size: 0.8rem; color: var(--muted);">
+                С собой возьмите паспорт или права для оформления гостевого браслета, а также удобную спортивную форму и обувь.
+              </p>
+              <a href="#hero" class="btn btn-secondary" onclick="document.getElementById('trial-form').style.display='block'; document.getElementById('trial-success-card').classList.remove('is-active');">
+                Вернуться наверх
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         КОНТАКТЫ & ЛОКАЦИЯ (CONTACTS)
+         ========================================================================== -->
+    <section class="section" id="contacts" style="background-color: var(--surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Локация</span>
+          <h2 class="section-title">ТРЕНИРУЙСЯ В САМОМ <span class="text-accent">ЦЕНТРЕ НОВОСИБИРСКА</span></h2>
+          <p class="section-subtitle">
+            Удобная транспортная развязка, собственная парковка на 150 мест и 3 минуты пешком от метро «Заельцовская».
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
+          <div style="background: var(--surface-2); border: 1px solid var(--line); padding: var(--space-xl); display: flex; flex-direction: column; gap: 12px;">
+            <div style="color: var(--accent); font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; text-transform: uppercase;">
+              Адрес и метро
+            </div>
+            <p style="color: var(--text); font-size: 1rem;">
+              г. Новосибирск, Красный проспект, д. 0<br>
+              <span style="color: var(--muted); font-size: 0.85rem;">4 этаж (отдельный лифт PULSE)</span>
+            </p>
+            <div style="display: flex; align-items: center; gap: 8px; color: var(--accent); font-size: 0.85rem; font-weight: 600;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+              <span>Метро «Заельцовская» (280 м) • «Гагаринская» (450 м)</span>
+            </div>
+          </div>
+
+          <div style="background: var(--surface-2); border: 1px solid var(--line); padding: var(--space-xl); display: flex; flex-direction: column; gap: 12px;">
+            <div style="color: var(--accent); font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; text-transform: uppercase;">
+              Часы работы клуба
+            </div>
+            <p style="color: var(--text); font-size: 1rem;">
+              <strong>Понедельник – Пятница:</strong> 06:30 – 23:30<br>
+              <strong>Суббота – Воскресенье:</strong> 08:00 – 22:00
+            </p>
+            <span style="color: var(--muted); font-size: 0.85rem;">Для владельцев карт PRO VIP доступ открыт 24/7 круглосуточно.</span>
+          </div>
+
+          <div style="background: var(--surface-2); border: 1px solid var(--line); padding: var(--space-xl); display: flex; flex-direction: column; gap: 12px;">
+            <div style="color: var(--accent); font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; text-transform: uppercase;">
+              Связь с рецепцией
+            </div>
+            <a href="tel:+79000000002" style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--accent);">+7 (900) 000-00-02</a>
+            <p style="color: var(--muted); font-size: 0.85rem;">
+              Email: <a href="mailto:info@pulse-fitness.example" style="color: var(--muted);">info@pulse-fitness.example</a><br>
+              Бесплатная парковка 3 часа для всех резидентов клуба.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       10. ФУТЕР (FOOTER)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand & Slogan -->
+        <div>
+          <a href="#hero" class="logo" style="margin-bottom: var(--space-md);">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">PULSE</span>
+              <span class="logo-subtitle">Фитнес-клуб • НСК</span>
+            </div>
+          </a>
+          <p style="color: var(--muted); font-size: 0.85rem; max-width: 340px; margin-bottom: var(--space-md);">
+            Крупнейший технологичный фитнес-хаб Новосибирска. Силовые тренировки, кроссфит, бокс, 25-метровый бассейн и профессиональное восстановление в одном пространстве.
+          </p>
+          <div class="footer-socials">
+            <!-- VK -->
+            <a href="#" class="social-link" aria-label="PULSE в ВКонтакте">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.07 2H8.93C4.33 2 2 4.33 2 8.93v6.14C2 19.67 4.33 22 8.93 22h6.14c4.6 0 6.93-2.33 6.93-6.93V8.93C22 4.33 19.67 2 15.07 2zm3.38 13.91h-1.63c-.61 0-.8-.49-1.89-1.58-.96-.94-1.38-1.07-1.62-1.07-.33 0-.43.1-.43.57v1.45c0 .39-.12.63-1.15.63-1.7 0-3.58-1.03-4.9-2.94-1.99-2.82-2.54-4.93-2.54-5.36 0-.24.1-.46.57-.46h1.63c.42 0 .58.19.74.64.81 2.37 2.18 4.45 2.74 4.45.21 0 .31-.1.31-.63V9.69c-.06-1.13-.66-1.23-.66-1.63 0-.19.16-.38.42-.38h2.56c.36 0 .49.19.49.61v3.31c0 .36.16.49.27.49.22 0 .41-.12.82-.54 1.27-1.42 2.18-3.61 2.18-3.61.12-.24.33-.44.75-.44h1.63c.49 0 .6.25.49.61-.2 0.93-2.17 3.73-2.28 3.9-.19.3-.27.44 0 .8.2.27.87.85 1.32 1.37.82.95 1.45 1.74 1.62 2.29.17.54-.1.82-.87.82z"/>
+              </svg>
+            </a>
+            <!-- Telegram -->
+            <a href="#" class="social-link" aria-label="PULSE в Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8-3.46 3.82-1.61 4.62-1.89 5.14-1.9.11 0 .37.03.54.17.14.12.18.28.2.45-.01.07.01.21 0 .26z"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-link" aria-label="PULSE на YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title">Навигация</h4>
+          <ul class="footer-nav">
+            <li><a href="#directions">Направления клуба</a></li>
+            <li><a href="#schedule">Сетка расписания</a></li>
+            <li><a href="#trainers">Тренерский состав</a></li>
+            <li><a href="#pricing">Тарифы и абонементы</a></li>
+            <li><a href="#calculator">Калькулятор ИМТ</a></li>
+            <li><a href="#results">Результаты атлетов</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Programs -->
+        <div>
+          <h4 class="footer-col-title">Зоны и классы</h4>
+          <ul class="footer-nav">
+            <li><a href="#directions" onclick="prefillTrialForm('strength')">Тренажерный зал Eleiko</a></li>
+            <li><a href="#directions" onclick="prefillTrialForm('crossfit')">CrossFit арена</a></li>
+            <li><a href="#directions" onclick="prefillTrialForm('boxing')">Бойцовский ринг</a></li>
+            <li><a href="#directions" onclick="prefillTrialForm('pool')">Бассейн 25 метров</a></li>
+            <li><a href="#directions" onclick="prefillTrialForm('yoga')">Хатха-йога и пилатес</a></li>
+            <li><a href="#directions" onclick="prefillTrialForm('functional')">Функциональный тренинг</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contacts -->
+        <div>
+          <h4 class="footer-col-title">Контакты клуба</h4>
+          <ul class="footer-contacts-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>г. Новосибирск, Красный проспект, д. 0, 4 этаж</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+79000000002" style="color: var(--text); font-weight: 600;">+7 (900) 000-00-02</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span><a href="mailto:info@pulse-fitness.example" style="color: inherit;">info@pulse-fitness.example</a></span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Пн-Пт: 06:30–23:30 | Сб-Вс: 08:00–22:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Фитнес-клуб «PULSE» (ООО «Пульс Фитнес»). Все права защищены. Сайт разработан для портфолио.</p>
+        <p>Не является публичной офертой. <a href="privacy.html" style="color: var(--muted); text-decoration: underline;">Политика конфиденциальности</a> и обработки персональных данных.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Плашка «Демо-проект» -->
+  <div class="demo-badge" id="demo-badge" role="region" aria-label="Демо-проект">
+    <div class="demo-badge__content">
+      <p class="demo-badge__text">Демо-проект для портфолио. Компания, контакты и цены вымышлены.</p>
+      <a href="../index.html" class="demo-badge__link">Портфолио</a>
+    </div>
+    <button type="button" class="demo-badge__close" id="demo-badge-close" aria-label="Закрыть уведомление">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Cookie-баннер -->
+  <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Использование файлов cookie" hidden>
+    <div class="container cookie-banner__container">
+      <p class="cookie-banner__text">
+        Мы используем cookie и сторонние сервисы (шрифты, карты), чтобы сайт работал. Подробнее — в <a href="privacy.html" class="cookie-banner__link">Политике конфиденциальности</a>.
+      </p>
+      <button type="button" class="cookie-banner__btn" id="cookie-accept-btn">Понятно</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

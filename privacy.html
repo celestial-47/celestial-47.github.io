@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Политика конфиденциальности — портфолио веб-разработчика</title>
+  <meta name="description" content="Политика конфиденциальности портфолио веб-разработчика: какие данные собираются при обращении, как используется localStorage и как отозвать согласие.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://celestial-47.github.io/privacy.html">
+  <meta name="theme-color" content="#F7F7F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111210" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232B59FF'/%3E%3Cpath%20d='M18%2016h9v32h-9zM31%2016h15v9H31zM31%2029h10v9H31z'%20fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #F7F7F5;
+      --surface: #FFFFFF;
+      --text: #141414;
+      --muted: #5E5E5A;
+      --accent: #2B59FF;
+      --accent-ink: #2B59FF;
+      --line: #E3E3DE;
+      --focus: #2B59FF;
+      --radius: 16px;
+      --container: 1240px;
+      --ease: 180ms ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111210;
+        --surface: #191A18;
+        --text: #F2F2ED;
+        --muted: #A5A59E;
+        --accent: #2B59FF;
+        --accent-ink: #91A7FF;
+        --line: #2D2E2A;
+        --focus: #91A7FF;
+      }
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: clamp(20px, 4.5vw, 56px);
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 100;
+      top: 12px;
+      left: 12px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: var(--text);
+      color: var(--bg);
+      font-weight: 600;
+      text-decoration: none;
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+    }
+
+    .header__inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      min-height: 76px;
+      padding-block: 12px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 44px;
+      color: var(--text);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .brand__mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .brand__mark svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      color: var(--muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: var(--text);
+    }
+
+    main {
+      padding-block: 40px 80px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .breadcrumb a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      text-underline-offset: 3px;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text);
+    }
+
+    .doc {
+      max-width: 820px;
+      padding: 28px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: 0 18px 44px rgba(20, 20, 20, 0.05);
+    }
+
+    .doc__head {
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--accent-ink);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 8px 0 0;
+      font-size: clamp(1.9rem, 5vw, 2.6rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    .lead {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+
+    .date {
+      display: inline-flex;
+      margin-top: 16px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .doc section {
+      padding-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .doc p,
+    .doc li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.90625rem;
+      line-height: 1.7;
+    }
+
+    .doc p + p {
+      margin-top: 10px;
+    }
+
+    .doc ul {
+      display: grid;
+      gap: 6px;
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .doc a {
+      color: var(--text);
+      font-weight: 500;
+      text-underline-offset: 3px;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+    }
+
+    .footer__inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px 24px;
+      padding-block: 20px;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .footer__inner p {
+      margin: 0;
+    }
+
+    .footer__inner a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      color: var(--text);
+      text-underline-offset: 3px;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 90;
+      padding: 12px clamp(20px, 4.5vw, 56px) calc(12px + env(safe-area-inset-bottom, 0px));
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -10px 30px rgba(20, 20, 20, 0.1);
+    }
+
+    .cookie-banner[hidden] {
+      display: none;
+    }
+
+    .cookie-banner__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      max-width: var(--container);
+      margin-inline: auto;
+    }
+
+    .cookie-banner p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    .cookie-banner a {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .cookie-banner__btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 22px;
+      border: 0;
+      border-radius: 10px;
+      background: var(--text);
+      color: var(--bg);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+      .cookie-banner__inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .cookie-banner__btn {
+        flex: none;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .doc {
+        padding: 40px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  
+    main { overflow-wrap: anywhere; }
+    main table { display: block; max-width: 100%; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html" aria-label="Портфолио веб-разработчика — на главную">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3.5" y="3.5" width="7" height="7" rx="1.5"></rect>
+            <rect x="13.5" y="3.5" width="7" height="7" rx="1.5"></rect>
+            <rect x="3.5" y="13.5" width="7" height="7" rx="1.5"></rect>
+            <rect x="13.5" y="13.5" width="7" height="7" rx="1.5"></rect>
+          </svg>
+        </span>
+        <span>Портфолио.</span>
+      </a>
+      <a class="back-link" href="./index.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+        На главную
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <a href="./index.html">Главная</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Политика конфиденциальности</span>
+      </nav>
+
+      <article class="doc">
+        <header class="doc__head">
+          <p class="eyebrow">Документы</p>
+          <h1>Политика конфиденциальности</h1>
+          <p class="lead">Как владелец портфолио (Kwork: usupovartem13) обрабатывает данные посетителей портфолио и людей, которые связываются по поводу проектов.</p>
+          <p class="date">Редакция от 11 ноября 2026 года</p>
+        </header>
+
+        <section aria-labelledby="p-operator">
+          <h2 id="p-operator">1. Оператор</h2>
+          <p>Оператор — владелец профиля Kwork <a href="https://kwork.ru/user/usupovartem13">usupovartem13</a>, независимый веб-разработчик, работающий через фриланс-платформы. Связаться можно в Telegram <a href="https://t.me/samozabwenie">@samozabwenie</a> или в сообщениях на Kwork. Портфолио не является юридическим лицом и не ведёт коммерческую деятельность на этом сайте.</p>
+          <p>Сайт показывает демонстрационные проекты. Компании, контакты, цены и реквизиты внутри работ вымышлены и не относятся к реальным организациям.</p>
+        </section>
+
+        <section aria-labelledby="p-data">
+          <h2 id="p-data">2. Какие данные собираются</h2>
+          <p>Если посетитель пишет на email или в мессенджер, оператор может получить имя, адрес электронной почты, ник в мессенджере, описание задачи, сроки и бюджет. Эти данные предоставляются добровольно.</p>
+          <p>При просмотре сайта автоматически обрабатываются технические сведения: IP-адрес, тип браузера и устройства, разрешение экрана, источник перехода и время визита. Портфолио не содержит форм с указанием телефона и не принимает оплату.</p>
+        </section>
+
+        <section aria-labelledby="p-purpose">
+          <h2 id="p-purpose">3. Цели обработки</h2>
+          <p>Данные нужны, чтобы ответить на обращение, обсудить задачу, подготовить оценку и договориться о сроках. Технические данные помогают поддерживать работоспособность сайта, находить ошибки вёрстки и понимать, какие проекты смотрят чаще.</p>
+          <p>Оператор не отправляет массовые рекламные рассылки и не использует контакты для целей, не связанных с конкретным обращением.</p>
+        </section>
+
+        <section aria-labelledby="p-legal">
+          <h2 id="p-legal">4. Правовое основание</h2>
+          <p>Обработка выполняется на основании согласия субъекта персональных данных в соответствии со статьёй 6 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных». Согласие даётся добровольно в момент обращения и может быть отозвано в любой момент.</p>
+          <p>Технические данные обрабатываются в рамках законного интереса оператора — обеспечить безопасность и корректную работу сайта.</p>
+        </section>
+
+        <section aria-labelledby="p-cookie">
+          <h2 id="p-cookie">5. Cookie и localStorage</h2>
+          <p>Сайт использует localStorage, чтобы запомнить, что посетитель принял уведомление о cookie. Запись хранится в браузере и не передаётся оператору автоматически. Её можно удалить в настройках браузера.</p>
+          <p>Сторонние сервисы могут устанавливать собственные cookie при загрузке шрифтов и изображений. Отказ от cookie не блокирует просмотр портфолио, но уведомление может появиться снова.</p>
+        </section>
+
+        <section aria-labelledby="p-third">
+          <h2 id="p-third">6. Передача третьим лицам</h2>
+          <p>Оператор не продаёт данные и не передаёт их третьим лицам для маркетинга. При этом страница подключает сервисы, которые могут получать IP-адрес и технические сведения о браузере:</p>
+          <ul>
+            <li>Google Fonts — загрузка шрифта Inter;</li>
+            <li>Unsplash — изображения проектов и обложка портфолио.</li>
+          </ul>
+          <p>Эти сервисы работают по собственным политикам конфиденциальности. Оператор не контролирует их обработку технических данных.</p>
+        </section>
+
+        <section aria-labelledby="p-storage">
+          <h2 id="p-storage">7. Сроки хранения</h2>
+          <p>Переписка по проектам хранится не дольше 12 месяцев с даты последнего сообщения, если иное не требуется для исполнения договора или закона. После этого данные удаляются. Технические журналы и записи localStorage хранятся в браузере до удаления пользователем либо до истечения срока, установленного браузером.</p>
+        </section>
+
+        <section aria-labelledby="p-rights">
+          <h2 id="p-rights">8. Права субъекта данных</h2>
+          <p>Посетитель вправе:</p>
+          <ul>
+            <li>получить сведения об обработке своих персональных данных;</li>
+            <li>потребовать уточнить, заблокировать или удалить неточные данные;</li>
+            <li>отозвать согласие на обработку;</li>
+            <li>обратиться в Роскомнадзор или суд, если считает свои права нарушенными.</li>
+          </ul>
+          <p>Для реализации прав напишите в Telegram <a href="https://t.me/samozabwenie">@samozabwenie</a>. Укажите имя, адрес переписки и суть требования. Ответ предоставляется в срок, установленный законом.</p>
+        </section>
+
+        <section aria-labelledby="p-withdraw">
+          <h2 id="p-withdraw">9. Как отозвать согласие</h2>
+          <p>Напишите в Telegram <a href="https://t.me/samozabwenie">@samozabwenie</a> с темой «Отзыв согласия». После получения письма оператор прекратит обработку и удалит данные, если закон не требует их сохранить. Отзыв не влияет на обработку, которая уже была выполнена до его получения.</p>
+        </section>
+
+        <section aria-labelledby="p-security">
+          <h2 id="p-security">10. Защита данных</h2>
+          <p>Доступ к переписке ограничен оператором. Передача данных по сети защищается HTTPS. Пароли и платёжные данные через сайт не собираются. Посетитель также может удалить локальные записи сайта через настройки браузера.</p>
+        </section>
+
+        <section aria-labelledby="p-changes">
+          <h2 id="p-changes">11. Изменения политики</h2>
+          <p>Оператор может обновлять текст политики, если меняются состав данных, сервисы или требования закона. Актуальная редакция размещена на этой странице с указанием даты. Продолжение использования сайта после публикации новой редакции означает согласие с ней в части, не требующей отдельного согласия.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 Портфолио веб-разработчика. Все компании в работах вымышлены.</p>
+      <p><a href="./index.html">На главную</a></p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" hidden>
+    <div class="cookie-banner__inner">
+      <p>Мы используем cookie и сторонние сервисы (шрифты, изображения), чтобы сайт работал. Подробнее — в <a href="./privacy.html">Политике конфиденциальности</a>.</p>
+      <button class="cookie-banner__btn" type="button" data-cookie-accept>Понятно</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var banner = document.getElementById("cookieBanner");
+      var key = "portfolio-cookie-ok";
+      var accepted = false;
+
+      try {
+        accepted = window.localStorage.getItem(key) === "1";
+      } catch (err) {
+        accepted = false;
+      }
+
+      if (!banner || accepted) {
+        return;
+      }
+
+      banner.hidden = false;
+      var accept = banner.querySelector("[data-cookie-accept]");
+      if (accept) {
+        accept.addEventListener("click", function () {
+          try {
+            window.localStorage.setItem(key, "1");
+          } catch (err) {
+            /* localStorage может быть недоступен */
+          }
+          banner.hidden = true;
+        });
+      }
+    }());
+  </script>
+</body>
+</html>

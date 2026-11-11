@@ -1,0 +1,6 @@
+# Демо-сайты закрыты от индексации мета-тегом noindex на самих страницах.
+# Здесь их не запрещаем: иначе поисковик не зайдёт на страницу и не увидит noindex.
+User-agent: *
+Allow: /
+
+Sitemap: https://celestial-47.github.io/sitemap.xml

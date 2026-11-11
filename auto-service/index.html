@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ГаражПро — автосервис в Краснодаре: ремонт, диагностика, ТО</title>
+  <meta name="description" content="Автосервис «ГаражПро» в Краснодаре: диагностика бесплатно при ремонте, оригинальные запчасти, гарантия 1 год, ремонт от 1 дня. Рассчитайте стоимость онлайн и запишитесь за минуту.">
+  <meta name="theme-color" content="#1A1D21">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://celestial-47.github.io/auto-service/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ГаражПро">
+  <meta property="og:title" content="ГаражПро — автосервис в Краснодаре">
+  <meta property="og:description" content="Диагностика бесплатно при ремонте. Честные цены, гарантия 1 год, ремонт от 1 дня. Калькулятор стоимости и онлайн-запись.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=1200&q=80&auto=format&fit=crop">
+  <meta property="og:image:alt" content="Автосервис «ГаражПро» — ремонт автомобилей в Краснодаре">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231A1D21'/%3E%3Cpath d='M16 4l10.4 6v12L16 28 5.6 22V10z' fill='%23F5B700'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%231A1D21'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Автосервис «ГаражПро»",
+    "description": "Автосервис в Краснодаре: компьютерная диагностика, ремонт ходовой, двигателя и тормозной системы, ТО, шиномонтаж и автоэлектрика.",
+    "url": "https://celestial-47.github.io/auto-service/",
+    "image": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=1200&q=80&auto=format&fit=crop",
+    "telephone": "+7 (900) 000-00-02",
+    "priceRange": "900–15 000 ₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Примерная, д. 0",
+      "addressLocality": "Краснодар",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Russo+One&display=swap">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="demo-bar" data-demo-bar>
+  <div class="container demo-bar-inner">
+    <p>Демо-проект для портфолио. Компания, контакты и цены вымышлены.</p>
+    <a href="../index.html">Портфолио</a>
+    <button class="demo-bar-close" type="button" data-demo-close aria-label="Скрыть плашку демо-проекта">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Иконки (Lucide-стиль, inline SVG) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+    <symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <!-- услуги -->
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+    <symbol id="i-spring" viewBox="0 0 24 24"><path d="M8 2h8M12 2v3M7 5.5l10 2-10 3 10 3-10 3 10 2M12 21v-2M8 22h8"/></symbol>
+    <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 5.5v.01M18.5 12h.01M12 18.5v.01M5.5 12h.01"/></symbol>
+    <symbol id="i-engine" viewBox="0 0 24 24"><path d="M4 9h3l1-2h6l1 2h3v9H4z"/><path d="M2 12v3M22 12v3M10 7V5h4v2M8 13h8"/></symbol>
+    <symbol id="i-tire" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <!-- процесс и гарантии -->
+    <symbol id="i-clip" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M10 9H8M16 13H8M16 17H8"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><path d="M8 6v6M16 6v6M2 12h19.6M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<!-- 1. Верхняя полоса -->
+<div class="topbar">
+  <div class="container topbar-in">
+    <ul class="topbar-info">
+      <li class="topbar-addr"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>г. Краснодар, ул. Примерная, д. 0</span></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span><span class="t-long">Пн–Сб 8:00–20:00, Вс 9:00–18:00</span><span class="t-short">Пн–Сб 8:00–20:00</span></span></li>
+    </ul>
+    <a class="topbar-phone" href="tel:+79000000002"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>+7 (900) 000-00-02</span></a>
+  </div>
+</div>
+
+<!-- Шапка -->
+<header class="header" id="top">
+  <div class="container header-in">
+    <a class="logo" href="#top" aria-label="ГаражПро — на главную">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12.1 7v14L16 30 3.9 23V9z" fill="#F5B700"/><circle cx="16" cy="16" r="5" fill="#1A1D21"/></svg>
+      <span class="logo-text">Гараж<span>Про</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Основное меню">
+      <ul>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#calc">Калькулятор</a></li>
+        <li><a href="#process">Как работаем</a></li>
+        <li><a href="#guarantee">Гарантии</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <a class="btn btn--primary nav-cta" href="#booking">Записаться</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="#booking">Записаться</a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <svg class="icon icon--lg" aria-hidden="true"><use id="nav-toggle-icon" href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 2. Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow--dark" style="--i:0">Автосервис в Краснодаре</p>
+      <h1 id="hero-title" style="--i:1">Диагностика бесплатно при ремонте</h1>
+      <p class="hero-lead" style="--i:2">Привезите авто на осмотр: найдём причину, назовём цену до начала работ и не возьмём ни рубля за диагностику, если ремонт делаете у нас.</p>
+      <div class="hero-actions" style="--i:3">
+        <a class="btn btn--primary btn--lg" href="#calc">Рассчитать стоимость<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="tel:+79000000002"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+      </div>
+      <ul class="facts" style="--i:4">
+        <li>
+          <span class="fact-ico"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <span><strong>Гарантия 1 год</strong><span class="fact-sub">на работы и запчасти</span></span>
+        </li>
+        <li>
+          <span class="fact-ico"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg></span>
+          <span><strong>Оригинальные запчасти</strong><span class="fact-sub">с документами и артикулами</span></span>
+        </li>
+        <li>
+          <span class="fact-ico"><svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg></span>
+          <span><strong>Ремонт от 1 дня</strong><span class="fact-sub">срочные работы — в день обращения</span></span>
+        </li>
+      </ul>
+    </div>
+    <figure class="hero-photo">
+      <div class="hero-frame">
+        <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=900&q=80&auto=format&fit=crop"
+             srcset="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=600&q=80&auto=format&fit=crop 600w, https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=900&q=80&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=1200&q=80&auto=format&fit=crop 1200w"
+             sizes="(min-width: 1024px) 480px, 92vw"
+             width="800" height="1000" fetchpriority="high"
+             alt="Мастер ГаражПро склонился над открытым капотом и ремонтирует двигатель">
+      </div>
+      <figcaption class="hero-badge"><strong>0 ₽</strong><span>за диагностику,<br>если ремонт у нас</span></figcaption>
+    </figure>
+  </div>
+  <div class="hazard" aria-hidden="true"></div>
+</section>
+
+<!-- 3. Услуги -->
+<section class="section section--white" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Услуги</p>
+      <h2 id="services-title">Чиним то, что действительно сломано</h2>
+      <p class="sec-lead">Цены указаны за работу для легкового авто. Запчасти и материалы считаем отдельно, по факту, и согласуем с вами до начала ремонта.</p>
+    </header>
+    <ul class="services">
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+        <h3>Компьютерная диагностика</h3>
+        <p>Считываем ошибки со всех блоков, проверяем датчики и проводку. Бесплатно, если ремонт у нас.</p>
+        <div class="svc-foot"><span class="svc-from">от 900 ₽</span><a class="svc-add" href="#calc" data-add="diag"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-drop"/></svg></span>
+        <h3>Замена масла и фильтров</h3>
+        <p>Масло, масляный и воздушный фильтры, сброс межсервисного интервала.</p>
+        <div class="svc-foot"><span class="svc-from">от 1 500 ₽</span><a class="svc-add" href="#calc" data-add="oil"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-spring"/></svg></span>
+        <h3>Ремонт ходовой части</h3>
+        <p>Рычаги, сайлентблоки, амортизаторы, ступичные подшипники, сход-развал.</p>
+        <div class="svc-foot"><span class="svc-from">от 2 500 ₽</span><a class="svc-add" href="#calc" data-add="susp"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-disc"/></svg></span>
+        <h3>Тормозная система</h3>
+        <p>Колодки, диски, суппорты, шланги, замена и прокачка тормозной жидкости.</p>
+        <div class="svc-foot"><span class="svc-from">от 1 800 ₽</span><a class="svc-add" href="#calc" data-add="brake"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-engine"/></svg></span>
+        <h3>Двигатель и ГРМ</h3>
+        <p>Ремень или цепь ГРМ, прокладки, ремонт и замена узлов двигателя.</p>
+        <div class="svc-foot"><span class="svc-from">от 6 500 ₽</span><a class="svc-add" href="#calc" data-add="engine"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-tire"/></svg></span>
+        <h3>Шиномонтаж</h3>
+        <p>Сезонная смена колёс, балансировка, ремонт проколов, хранение резины.</p>
+        <div class="svc-foot"><span class="svc-from">от 1 600 ₽</span><a class="svc-add" href="#calc" data-add="tire"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-snow"/></svg></span>
+        <h3>Кондиционер и климат</h3>
+        <p>Заправка, поиск утечек, чистка испарителя, замена компрессора.</p>
+        <div class="svc-foot"><span class="svc-from">от 2 200 ₽</span><a class="svc-add" href="#calc" data-add="ac"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+      <li class="svc-card">
+        <span class="svc-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-zap"/></svg></span>
+        <h3>Автоэлектрика</h3>
+        <p>Генератор, стартер, проводка, свет, установка сигнализации и камер.</p>
+        <div class="svc-foot"><span class="svc-from">от 1 500 ₽</span><a class="svc-add" href="#calc" data-add="elec"><span class="svc-add-text">В расчёт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. Калькулятор -->
+<section class="section section--bg" id="calc" aria-labelledby="calc-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Калькулятор стоимости</p>
+      <h2 id="calc-title">Посчитайте ремонт за минуту</h2>
+      <p class="sec-lead">Выберите класс авто и нужные работы — итог пересчитается сразу. Готовый расчёт одним нажатием попадёт в форму записи.</p>
+    </header>
+
+    <div class="calc">
+      <div class="calc-main">
+        <fieldset class="calc-step">
+          <legend><span class="step-no">1</span>Класс автомобиля</legend>
+          <div class="classes">
+            <label class="opt">
+              <input type="radio" name="class" value="car" data-k="1" data-label="Легковой" checked>
+              <span class="opt-body"><span class="opt-title">Легковой</span><span class="opt-sub">Седан, хэтчбек, универсал</span><span class="opt-k">×1</span></span>
+            </label>
+            <label class="opt">
+              <input type="radio" name="class" value="cross" data-k="1.15" data-label="Кроссовер">
+              <span class="opt-body"><span class="opt-title">Кроссовер</span><span class="opt-sub">Компактные, средние</span><span class="opt-k">×1,15</span></span>
+            </label>
+            <label class="opt">
+              <input type="radio" name="class" value="suv" data-k="1.3" data-label="Внедорожник">
+              <span class="opt-body"><span class="opt-title">Внедорожник</span><span class="opt-sub">Рамные, пикапы</span><span class="opt-k">×1,3</span></span>
+            </label>
+            <label class="opt">
+              <input type="radio" name="class" value="van" data-k="1.4" data-label="Коммерческий">
+              <span class="opt-body"><span class="opt-title">Коммерческий</span><span class="opt-sub">Фургоны, микроавтобусы</span><span class="opt-k">×1,4</span></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-step">
+          <legend><span class="step-no">2</span>Что нужно сделать</legend>
+          <div class="svc-list">
+            <label class="svc"><input type="checkbox" name="svc" value="diag" data-name="Компьютерная диагностика" data-price="900"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Компьютерная диагностика<span class="svc-hint">бесплатно, если выбран любой ремонт</span></span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="oil" data-name="Замена масла и фильтров" data-price="1500"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Замена масла и фильтров</span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="susp" data-name="Ремонт ходовой части" data-price="2500"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Ремонт ходовой части</span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="brake" data-name="Тормозная система" data-price="1800"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Тормозная система</span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="engine" data-name="Двигатель и ГРМ" data-price="6500"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Двигатель и ГРМ</span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="tire" data-name="Шиномонтаж" data-price="1600"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Шиномонтаж</span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="ac" data-name="Кондиционер и климат" data-price="2200"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Кондиционер и климат</span><span class="svc-price"></span></label>
+            <label class="svc"><input type="checkbox" name="svc" value="elec" data-name="Автоэлектрика" data-price="1500"><span class="svc-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span><span class="svc-name">Автоэлектрика</span><span class="svc-price"></span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <aside class="calc-sum" aria-label="Итог расчёта">
+        <h3 class="sum-title">Ваш расчёт</h3>
+        <p class="sum-class" id="sum-class">Легковой автомобиль</p>
+        <p class="sum-empty" id="sum-empty">Отметьте нужные работы — расчёт появится здесь.</p>
+        <ul class="sum-list" id="sum-list"></ul>
+        <div class="sum-total" aria-live="polite" aria-atomic="true">
+          <span>Итого за работу</span>
+          <strong id="sum-total">0 ₽</strong>
+        </div>
+        <p class="sum-note">Предварительная оценка. Окончательную цену назовём после осмотра, запчасти — отдельно.</p>
+        <button class="btn btn--primary btn--block" type="button" id="calc-go" disabled>Записаться с этим расчётом</button>
+        <p class="sum-hint" id="sum-hint">Выберите хотя бы одну услугу</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Как мы работаем -->
+<section class="section section--white" id="process" aria-labelledby="process-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Как мы работаем</p>
+      <h2 id="process-title">Пять шагов от звонка до ключей</h2>
+    </header>
+    <ol class="steps">
+      <li>
+        <span class="step-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span class="step-n">01</span>
+        <h3>Заявка</h3>
+        <p>Звоните или записывайтесь онлайн. Подберём время, когда вас примут без очереди.</p>
+      </li>
+      <li>
+        <span class="step-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-clip"/></svg></span>
+        <span class="step-n">02</span>
+        <h3>Приёмка</h3>
+        <p>Осматриваем авто при вас и фиксируем состояние в акте приёма.</p>
+      </li>
+      <li>
+        <span class="step-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-file"/></svg></span>
+        <span class="step-n">03</span>
+        <h3>Диагностика и смета</h3>
+        <p>Находим причину, называем цену и срок. Работы начинаем только после вашего согласия.</p>
+      </li>
+      <li>
+        <span class="step-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+        <span class="step-n">04</span>
+        <h3>Ремонт</h3>
+        <p>Мастер делает работу. Если что-то всплыло по ходу дела, присылаем фото и спрашиваем вас.</p>
+      </li>
+      <li>
+        <span class="step-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-key"/></svg></span>
+        <span class="step-n">05</span>
+        <h3>Выдача</h3>
+        <p>Показываем результат, возвращаем старые детали и выдаём гарантийный талон.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Мастерская в цифрах -->
+<section class="band" aria-label="Мастерская в цифрах">
+  <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=1600&q=80&auto=format&fit=crop"
+       srcset="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=1600&q=80&auto=format&fit=crop 1600w"
+       sizes="100vw" width="1600" height="900" loading="lazy"
+       alt="Стена мастерской с аккуратно развешанными гаечными ключами и инструментом">
+  <div class="container band-in">
+    <ul class="band-stats">
+      <li><strong>6</strong><span>подъёмников</span></li>
+      <li><strong>11</strong><span>мастеров со стажем от 5 лет</span></li>
+      <li><strong>4 200</strong><span>авто обслужили за прошлый год</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6. Марки -->
+<section class="section section--bg" id="brands" aria-labelledby="brands-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Марки</p>
+      <h2 id="brands-title">Обслуживаем популярные марки</h2>
+      <p class="sec-lead">Работаем с иномарками и отечественными авто. Если вашей марки нет в списке, позвоните — подскажем, возьмёмся ли.</p>
+    </header>
+    <ul class="brands">
+      <li>Toyota</li><li>Kia</li><li>Hyundai</li><li>Volkswagen</li><li>Skoda</li><li>Renault</li>
+      <li>Nissan</li><li>Mazda</li><li>Ford</li><li>Chevrolet</li><li>Mitsubishi</li><li>Lada</li>
+      <li>BMW</li><li>Mercedes-Benz</li><li>Audi</li><li>Lexus</li><li>Honda</li><li>Subaru</li>
+      <li>Opel</li><li>Geely</li><li>Haval</li><li>Chery</li><li>Peugeot</li><li>Suzuki</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. Гарантии и сертификаты -->
+<section class="section section--white" id="guarantee" aria-labelledby="guarantee-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Гарантии и сертификаты</p>
+      <h2 id="guarantee-title">Всё прописано в договоре</h2>
+    </header>
+    <div class="guar">
+      <div class="guar-main">
+        <figure class="guar-photo">
+          <img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?w=900&q=80&auto=format&fit=crop"
+               srcset="https://images.unsplash.com/photo-1504222490345-c075b6008014?w=600&q=80&auto=format&fit=crop 600w, https://images.unsplash.com/photo-1504222490345-c075b6008014?w=900&q=80&auto=format&fit=crop 900w"
+               sizes="(min-width: 1024px) 520px, 92vw" width="900" height="600" loading="lazy"
+               alt="Улыбающийся механик рядом с жёлтым автомобилем с открытым капотом">
+        </figure>
+        <ul class="guar-list">
+          <li><span class="guar-ico"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><div><h3>12 месяцев на работы и запчасти</h3><p>Срок указан в акте выполненных работ. Гарантийный случай устраняем бесплатно.</p></div></li>
+          <li><span class="guar-ico"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg></span><div><h3>Оригинальные запчасти</h3><p>Только с документами. Артикул и производитель видны в заказ-наряде.</p></div></li>
+          <li><span class="guar-ico"><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg></span><div><h3>Цена фиксируется до работ</h3><p>Дополнительные работы делаем только после вашего согласия.</p></div></li>
+          <li><span class="guar-ico"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></span><div><h3>Фотоотчёт и старые детали</h3><p>Снимаем замену ключевых узлов и возвращаем снятые запчасти.</p></div></li>
+        </ul>
+      </div>
+      <div class="certs" role="list" aria-label="Сертификаты и допуски">
+        <article class="cert" role="listitem">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-award"/></svg>
+          <h3>Реестр автосервисов</h3>
+          <p>Запись в региональном реестре СТО Краснодарского края</p>
+          <span class="cert-no">№ 23-0417</span>
+        </article>
+        <article class="cert" role="listitem">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-cpu"/></svg>
+          <h3>Мастер-диагност</h3>
+          <p>Сертификат по диагностике электронных систем, 11 мастеров</p>
+          <span class="cert-no">№ ДС-2025/118</span>
+        </article>
+        <article class="cert" role="listitem">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-snow"/></svg>
+          <h3>Работы с хладагентом</h3>
+          <p>Допуск к обслуживанию кондиционеров R134a и R1234yf</p>
+          <span class="cert-no">№ ХА-0932</span>
+        </article>
+        <article class="cert" role="listitem">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-shield"/></svg>
+          <h3>Страхование ответственности</h3>
+          <p>Полис на 3 000 000 ₽ на случай повреждения авто в сервисе</p>
+          <span class="cert-no">до 31.03.2027</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Отзывы -->
+<section class="section section--bg" id="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Отзывы</p>
+      <h2 id="reviews-title">Что говорят клиенты</h2>
+    </header>
+    <div class="reviews">
+      <div class="rating">
+        <strong class="rating-n">4,9</strong>
+        <span class="stars" role="img" aria-label="Средняя оценка 4,9 из 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+        <span class="rating-sub">по 312 отзывам клиентов</span>
+      </div>
+      <ul class="review-list">
+        <li class="review">
+          <div class="review-top"><span class="avatar" aria-hidden="true">АК</span><div><strong>Андрей К.</strong><span class="review-car">Kia Sportage · замена ГРМ</span></div></div>
+          <span class="stars" role="img" aria-label="Оценка 5 из 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p>Цену назвали по телефону, в итоге вышло ровно столько же. Старые детали вернули в пакете и показали, где был износ.</p>
+        </li>
+        <li class="review">
+          <div class="review-top"><span class="avatar" aria-hidden="true">МС</span><div><strong>Марина С.</strong><span class="review-car">Skoda Octavia · диагностика</span></div></div>
+          <span class="stars" role="img" aria-label="Оценка 5 из 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p>Горел Check Engine, в двух местах просто сбросили ошибку. Здесь нашли окисленный разъём датчика. Диагностика бесплатно, заплатила только за ремонт.</p>
+        </li>
+        <li class="review">
+          <div class="review-top"><span class="avatar" aria-hidden="true">ИП</span><div><strong>Игорь П.</strong><span class="review-car">Lada Largus фургон · ТО парка</span></div></div>
+          <span class="stars" role="img" aria-label="Оценка 5 из 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p>Обслуживаю шесть фургонов. Ставят по записи, присылают фотоотчёт, ждать не приходится. За год ни одного возврата по гарантии.</p>
+        </li>
+        <li class="review">
+          <div class="review-top"><span class="avatar" aria-hidden="true">ЕТ</span><div><strong>Елена Т.</strong><span class="review-car">Toyota RAV4 · тормоза, сход-развал</span></div></div>
+          <span class="stars" role="img" aria-label="Оценка 4 из 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon icon--off" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p>Тормоза и сход-развал сделали за один день. Минус: ждала на 40 минут дольше обещанного, но о задержке предупредили сами.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Запись -->
+<section class="section section--dark" id="booking" aria-labelledby="booking-title">
+  <div class="container booking">
+    <div class="booking-info">
+      <p class="eyebrow eyebrow--dark">Запись на сервис</p>
+      <h2 id="booking-title">Запишитесь на удобное время</h2>
+      <ul class="booking-points">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Перезвоним в течение 15 минут в рабочее время</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Подтвердим время и ориентировочную цену</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Предоплата не нужна</li>
+      </ul>
+      <figure class="booking-photo">
+        <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?w=800&q=80&auto=format&fit=crop"
+             width="800" height="470" loading="lazy"
+             alt="Тёмный бокс мастерской с автомобилем и горящими задними фонарями">
+      </figure>
+    </div>
+
+    <div class="booking-card">
+      <form id="booking-form" class="form" novalidate>
+        <div class="calc-card" id="booking-calc" hidden>
+          <div class="calc-card-head">
+            <h3>Расчёт из калькулятора</h3>
+            <button type="button" class="link-btn" id="booking-calc-clear">Убрать</button>
+          </div>
+          <p class="calc-card-class" id="booking-calc-class"></p>
+          <ul class="calc-card-list" id="booking-calc-list"></ul>
+          <p class="calc-card-total"><span>Итого за работу</span><strong id="booking-calc-total"></strong></p>
+          <a class="calc-card-edit" href="#calc">Изменить расчёт</a>
+          <input type="hidden" name="calc" id="f-calc">
+        </div>
+
+        <div class="field">
+          <label for="f-name">Имя</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required aria-describedby="f-name-err">
+          <p class="field-error" id="f-name-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-phone">Телефон</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-02" required aria-describedby="f-phone-err">
+          <p class="field-error" id="f-phone-err" role="alert"></p>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-car">Марка и модель</label>
+            <input id="f-car" name="car" type="text" autocomplete="off" placeholder="Например, Kia Rio" required aria-describedby="f-car-err">
+            <p class="field-error" id="f-car-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-plate">Госномер <span class="opt-label">необязательно</span></label>
+            <input id="f-plate" name="plate" type="text" autocomplete="off" maxlength="12" placeholder="А123ВС 193" aria-describedby="f-plate-err">
+            <p class="field-error" id="f-plate-err" role="alert"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-date">Желаемая дата</label>
+          <input id="f-date" name="date" type="date" required aria-describedby="f-date-err">
+          <p class="field-error" id="f-date-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-comment">Комментарий <span class="opt-label">необязательно</span></label>
+          <textarea id="f-comment" name="comment" rows="3" placeholder="Что случилось: стук, ошибка на панели, пора на ТО"></textarea>
+        </div>
+        <div class="field field--check">
+          <label class="check">
+            <input id="f-consent" name="consent" type="checkbox" required aria-describedby="f-consent-err">
+            <span class="check-box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <span class="check-text">Я согласен(на) на обработку персональных данных в соответствии с <a href="./privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a></span>
+          </label>
+          <p class="field-error" id="f-consent-err" role="alert"></p>
+        </div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit" id="book-submit"><span class="btn-label">Записаться</span></button>
+      </form>
+
+      <div class="success" id="book-success" tabindex="-1" hidden>
+        <span class="success-ico"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-check"/></svg></span>
+        <h3 id="success-title">Заявка принята</h3>
+        <p class="success-lead" id="success-lead"></p>
+        <dl class="success-data" id="success-data"></dl>
+        <button type="button" class="btn btn--dark" id="book-again">Оформить ещё одну запись</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Контакты -->
+<section class="section section--bg" id="contacts" aria-labelledby="contacts-title">
+  <div class="container">
+    <header class="sec-head">
+      <p class="eyebrow">Контакты</p>
+      <h2 id="contacts-title">Как нас найти</h2>
+    </header>
+    <div class="contacts">
+      <div class="contacts-info">
+        <ul class="contact-list">
+          <li><svg class="icon icon--lg" aria-hidden="true"><use href="#i-pin"/></svg><div><span class="cl-label">Адрес</span><span class="cl-val">г. Краснодар, ул. Примерная, д. 0</span></div></li>
+          <li><svg class="icon icon--lg" aria-hidden="true"><use href="#i-clock"/></svg><div><span class="cl-label">Часы работы</span><span class="cl-val">Пн–Сб 8:00–20:00<br>Вс 9:00–18:00</span></div></li>
+          <li><svg class="icon icon--lg" aria-hidden="true"><use href="#i-phone"/></svg><div><span class="cl-label">Телефон</span><a class="cl-val cl-link" href="tel:+79000000002">+7 (900) 000-00-02</a></div></li>
+        </ul>
+        <h3 class="route-title">Как проехать</h3>
+        <ul class="route">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg><span><strong>На авто.</strong> Въезд с улицы Примерной через арку, второй бокс справа. Мастерская видна с дороги по жёлтой вывеске.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-parking"/></svg><span><strong>Парковка.</strong> Восемь бесплатных мест для клиентов во дворе.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-bus"/></svg><span><strong>На транспорте.</strong> До остановки «Примерная» маршрутками и автобусами, оттуда три минуты пешком.</span></li>
+        </ul>
+      </div>
+      <div class="map">
+        <iframe title="Карта: автосервис ГаражПро, Краснодар" src="https://yandex.ru/map-widget/v1/?ll=38.975313%2C45.035470&z=12" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-in">
+    <div class="footer-brand">
+      <a class="logo" href="#top" aria-label="ГаражПро — наверх">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12.1 7v14L16 30 3.9 23V9z" fill="#F5B700"/><circle cx="16" cy="16" r="5" fill="#1A1D21"/></svg>
+        <span class="logo-text">Гараж<span>Про</span></span>
+      </a>
+      <p>Автосервис в Краснодаре. Честные цены, оригинальные запчасти, гарантия 1 год.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Меню в подвале">
+      <ul>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#calc">Калькулятор</a></li>
+        <li><a href="#process">Как работаем</a></li>
+        <li><a href="#guarantee">Гарантии</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contacts">
+      <a href="tel:+79000000002"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>+7 (900) 000-00-02</a>
+      <span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>г. Краснодар, ул. Примерная, д. 0</span>
+      <span><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Пн–Сб 8:00–20:00, Вс 9:00–18:00</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> ГаражПро. Все права защищены.</p>
+    <p><a href="./privacy.html">Политика конфиденциальности</a></p>
+    <p class="footer-demo-note">Демо-проект. Компания, контакты и цены вымышлены.</p>
+  </div>
+</footer>
+
+<!-- 11. Плавающая кнопка звонка (мобильные) -->
+<a class="fab" href="tel:+79000000002" aria-label="Позвонить: +7 (900) 000-00-02"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-phone"/></svg></a>
+
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="cookie-banner-inner">
+    <p>Мы используем cookie и сторонние сервисы (шрифты, карты), чтобы сайт работал. Подробнее — в <a href="./privacy.html">Политике конфиденциальности</a>.</p>
+    <button class="btn btn--primary cookie-banner-btn" type="button" data-cookie-accept>Понятно</button>
+  </div>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
